@@ -1,1 +1,1 @@
-"#front_end_ppl" 
+"#Front end based on template" 
