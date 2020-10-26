@@ -1,1 +1,1 @@
-"#Front end based on template" 
+"#Front end" 
