@@ -1,6 +1,6 @@
 ### List need :
-  + Home [x]
-  + Auth :
+  + [x] Home 
+  + [ ] Auth :
     + Login
     + Register
     + User :
@@ -10,14 +10,14 @@
         * List User
         * User Details
         * Edit/Update Users
-  + Blog
+  + [ ] Blog
     + Admin :
         * Create
         * Read(List & Details)
         * Update
     + User :
         * Read (List & Details)
-  + Shop
+  + [ ] Shop
     + User :
         * List Product View
         * Product Details
@@ -25,10 +25,10 @@
         * Product Create
         * Product View (List & Details)
         * Product Update
-  + Cart :
+  + [ ] Cart :
     + Cart Details View 
     + Checkout Page
-  + Transaction :
+  + [ ] Transaction :
     + User :
         * Details Transaction
         * Confirm Payment
@@ -37,4 +37,4 @@
         * Details Transaction
         * Confirm Verification Payment
         * Update No Resi
-  + Consultation (Coming Soon)
+  + [ ] Consultation (Coming Soon)
