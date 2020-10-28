@@ -3,8 +3,8 @@
 ### List need :
   + [x] Home 
   + [ ] Auth :
-    + Login
-    + Register
+    + [x] Login
+    + [x] Register
     + User :
         * Profile Details
         * Profile Update/Edit
