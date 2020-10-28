@@ -1,5 +1,5 @@
 ### List need :
-  + Home
+  + Home [x]
   + Auth :
     + Login
     + Register
