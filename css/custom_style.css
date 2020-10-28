@@ -17,3 +17,10 @@
 #timer .time{
     color: white;
 }
+.foto_profil_user{
+    border-radius: 50%;
+    width: 2em;
+}
+.user_profile_detail{
+    width: 18em;
+}
