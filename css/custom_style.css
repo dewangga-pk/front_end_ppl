@@ -3,3 +3,17 @@
 .owl-carousel.home-slider .slider-item .slider-text h1{
     font-family: 'Elsie', cursive;
 }
+.heading-section h2{
+    font-family: 'Elsie', cursive;
+    color: #5CDC87;
+}
+.color-white{
+    color: white;
+}
+.product_discount_title{
+    font-size: 48px;
+    font-weight: 900;
+}
+#timer .time{
+    color: white;
+}
