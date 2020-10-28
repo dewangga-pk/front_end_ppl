@@ -7,7 +7,7 @@
     + [x] Register
     + User :
         * [x] Profile Details
-        * Profile Update/Edit
+        * [x] Profile Update/Edit
     + Super Admin :
         * List User
         * User Details
