@@ -23,8 +23,8 @@
           + [x] Details View -> blog-single.html
   + [ ] Shop
     + User :
-        * List Product View
-        * Product Details
+        * [x] List Product View
+        * [x] Product Details
     + Admin :
         * Product Create
         * Product View (List & Details)
