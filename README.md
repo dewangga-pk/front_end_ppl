@@ -3,11 +3,11 @@
 ### List need :
   + [x] Home 
   + [ ] Auth :
-    + [x] Login
-    + [x] Register
-    + User :
-        * [x] Profile Details
-        * [x] Profile Update/Edit
+    + [x] Login ->login.html
+    + [x] Register ->signUp.html
+    + User : -> User_index_after_login.html
+        * [x] Profile Details ->user_profile.html
+        * [x] Profile Update/Edit ->edit_profile.html
     + Super Admin :
         * List User
         * User Details
@@ -17,10 +17,10 @@
         * Create
         * Read(List & Details)
         * Update
-    + [x] User :
-        * [x] Read
-          + [x] List View
-          + [x] Details View
+    + User :
+        * Read
+          + [x] List View -> blog.html
+          + [x] Details View -> blog-single.html
   + [ ] Shop
     + User :
         * List Product View
