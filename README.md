@@ -18,7 +18,9 @@
         * Read(List & Details)
         * Update
     + User :
-        * Read (List & Details)
+        * Read
+          + [x] List View
+          + [x] Details View
   + [ ] Shop
     + User :
         * List Product View
