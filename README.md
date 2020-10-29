@@ -17,8 +17,8 @@
         * Create
         * Read(List & Details)
         * Update
-    + User :
-        * Read
+    + [x] User :
+        * [x] Read
           + [x] List View
           + [x] Details View
   + [ ] Shop
