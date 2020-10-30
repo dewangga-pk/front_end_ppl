@@ -23,14 +23,14 @@
           + [x] Details View -> blog-single.html
   + [ ] Shop
     + User :
-        * [x] List Product View
-        * [x] Product Details
+        * [x] List Product View -> shop.html
+        * [x] Product Details -> product-single.html
     + Admin :
         * Product Create
         * Product View (List & Details)
         * Product Update
   + [ ] Cart :
-    + Cart Details View 
+    + [x] Cart Details View -> cart.html
     + Checkout Page
   + [ ] Transaction :
     + User :
