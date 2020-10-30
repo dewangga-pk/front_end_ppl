@@ -31,11 +31,11 @@
         * Product Update
   + [ ] Cart :
     + [x] Cart Details View -> cart.html
-    + Checkout Page
+    + [x] Checkout Page -> checkout.html
   + [ ] Transaction :
     + User :
-        * Details Transaction
-        * Confirm Payment
+        * [x] Details Transaction -> checkout.html
+        * [x] Confirm Payment -> checkout.html
     + Admin :
         * List Transaction
         * Details Transaction
