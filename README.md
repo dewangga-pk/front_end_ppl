@@ -13,8 +13,8 @@
         * User Details
         * Edit/Update Users
     + Admin :
-        * Profile Details
-        * Profile Update
+        * [x] Profile Details
+        * [x] Profile Update
   + [ ] Blog
     + Admin :
         * Create
