@@ -18,7 +18,9 @@
   + [ ] Blog
     + Admin :
         * Create
-        * Read(List & Details)
+        * Read
+          + [x] List View
+          + Details View 
         * Update
     + User :
         * Read
