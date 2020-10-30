@@ -23,19 +23,19 @@
           + [x] Details View -> blog-single.html
   + [ ] Shop
     + User :
-        * [x] List Product View
-        * [x] Product Details
+        * [x] List Product View -> shop.html
+        * [x] Product Details -> product-single.html
     + Admin :
         * Product Create
         * Product View (List & Details)
         * Product Update
   + [ ] Cart :
-    + Cart Details View 
-    + Checkout Page
+    + [x] Cart Details View -> cart.html
+    + [x] Checkout Page -> checkout.html
   + [ ] Transaction :
     + User :
-        * Details Transaction
-        * Confirm Payment
+        * [x] Details Transaction -> checkout.html
+        * [x] Confirm Payment -> checkout.html
     + Admin :
         * List Transaction
         * Details Transaction
