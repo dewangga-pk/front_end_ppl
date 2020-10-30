@@ -12,6 +12,9 @@
         * List User
         * User Details
         * Edit/Update Users
+    + Admin :
+        * Profile Details
+        * Profile Update
   + [ ] Blog
     + Admin :
         * Create
