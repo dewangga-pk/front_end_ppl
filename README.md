@@ -17,11 +17,11 @@
         * [x] Profile Update
   + [ ] Blog
     + Admin :
-        * Create
+        * [x] Create
         * Read
           + [x] List View
           + [x] Details View 
-        * Update
+        * [x] Update
     + User :
         * Read
           + [x] List View -> blog.html
