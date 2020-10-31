@@ -20,7 +20,7 @@
         * Create
         * Read
           + [x] List View
-          + Details View 
+          + [x] Details View 
         * Update
     + User :
         * Read
