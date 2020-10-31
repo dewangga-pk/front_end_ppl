@@ -12,11 +12,16 @@
         * List User
         * User Details
         * Edit/Update Users
+    + Admin :
+        * [x] Profile Details
+        * [x] Profile Update
   + [ ] Blog
     + Admin :
-        * Create
-        * Read(List & Details)
-        * Update
+        * [x] Create
+        * Read
+          + [x] List View
+          + [x] Details View 
+        * [x] Update
     + User :
         * Read
           + [x] List View -> blog.html
