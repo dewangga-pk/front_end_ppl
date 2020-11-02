@@ -31,9 +31,12 @@
         * [x] List Product View -> shop.html
         * [x] Product Details -> product-single.html
     + Admin :
-        * Product Create
-        * Product View (List & Details)
-        * Product Update
+        * [x] Product Create -> admin_new_product.html
+        * Product View
+          + [x] List View -> admin_shop.html
+          + [x] Details View -> admin_product_single.html
+          + [x] Out of Stock View -> admin_product_outOfstock.html
+        * [x] Product Update -> admin_edit_product.html
   + [ ] Cart :
     + [x] Cart Details View -> cart.html
     + [x] Checkout Page -> checkout.html
