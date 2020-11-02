@@ -32,7 +32,10 @@
         * [x] Product Details -> product-single.html
     + Admin :
         * Product Create
-        * Product View (List & Details)
+        * Product View
+          + [x] List View -> admin_shop.html
+          + [x] Details View -> admin_product_single.html
+          + [x] Out of Stock View -> admin_product_outOfstock.html
         * Product Update
   + [ ] Cart :
     + [x] Cart Details View -> cart.html
