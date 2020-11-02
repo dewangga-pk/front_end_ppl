@@ -45,7 +45,7 @@
         * [x] Details Transaction -> checkout.html
         * [x] Confirm Payment -> checkout.html
     + Admin :
-        * List Transaction
+        * [x] List Transaction
         * Details Transaction
         * Confirm Verification Payment
         * Update No Resi
