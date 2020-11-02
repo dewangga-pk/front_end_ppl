@@ -15,7 +15,7 @@
     font-weight: 900;
 }
 #timer .time{
-    color: white;
+    color: white!important;
 }
 .foto_profil_user{
     border-radius: 50%;
