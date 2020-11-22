@@ -11,7 +11,7 @@
     + Super Admin :
         * [x] List User
         * [x] User Details
-        * Edit/Update Users
+        * [x] Edit/Update Users
     + Admin :
         * [x] Profile Details
         * [x] Profile Update
