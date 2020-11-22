@@ -9,7 +9,7 @@
         * [x] Profile Details ->user_profile.html
         * [x] Profile Update/Edit ->edit_profile.html
     + Super Admin :
-        * List User
+        * [x] List User
         * User Details
         * Edit/Update Users
     + Admin :
