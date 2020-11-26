@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
     <title>Users Details</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,33 +13,52 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="../../css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/animate.css">
 
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="../../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../../css/magnific-popup.css">
 
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="../../css/aos.css">
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="../../css/ionicons.min.css">
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="../../css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="../../css/jquery.timepicker.css">
 
 
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../../css/flaticon.css">
+    <link rel="stylesheet" href="../../css/icomoon.css">
+    <link rel="stylesheet" href="../../css/style.css">
 
-    <link rel="stylesheet" href="css/custom_style.css">
+    <link rel="stylesheet" href="../../css/custom_style.css">
     <!-- ICON FONTAWESOME -->
     <script src="https://kit.fontawesome.com/3aa0ba3511.js" crossorigin="anonymous"></script>
     <!-- END ICON FONTAWESOME -->
 </head>
 
 <body class="goto-here">
-    <!-- NAV ADMIN TANPA CART -->
+    <!-- MODAL LOGOUT CONFIRM -->
+    <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Caution</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">Are you sure to log out?</div>
+                <div class="modal-footer d-flex justify-content-around">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-primary">Yes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MODAL LOGOUT CONFIRM -->
+
     <!-- START NAV -->
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
@@ -51,20 +70,22 @@
 
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="super_admin_index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Shop</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">About</a></li>
                     <li class="nav-item dropdown">
                         <div class="nav-link dropdown-toggle" id="cbAccount" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
-                            <span><img src="images/person_4.jpg" alt="Foto Profil" class="foto_profil_user"></span>
+                            <span><img src="../../images/person_4.jpg" alt="Foto Profil"
+                                    class="foto_profil_user"></span>
                             <span>Super Admin</span>
                         </div>
                         <div class="dropdown-menu" aria-labelledby="cbAccount">
                             <a class="dropdown-item" href="#">Transaction Data</a>
-                            <a class="dropdown-item" href="super_admin_user_management.html">User Management</a>
-                            <a class="dropdown-item" href="#">Log out</a>
+                            <a class="dropdown-item" href="user_management.html">Users Management</a>
+                            <a class="dropdown-item" href="../../index.html" data-toggle="modal"
+                                data-target="#logoutModal">Log out</a>
                         </div>
                     </li>
                 </ul>
@@ -74,7 +95,7 @@
     <!-- END nav -->
 
     <!-- JUMBOTRON -->
-    <div class="hero-wrap hero-bread" style="background-image: url('images/bg_1.jpg');">
+    <div class="hero-wrap hero-bread" style="background-image: url('../../images/bg_1.jpg');">
         <div class="container">
             <div class="row no-gutters slider-text align-items-center justify-content-center">
                 <div class="col-md-9 ftco-animate text-center">
@@ -98,35 +119,35 @@
                                 <label for="name">Full Name</label>
                             </div>
                             <div class="col-md-6">
-                                <span>Why You</span>
+                                <span>Iqbal Al Mahdi</span>
                             </div>
                             <div class="w-100"></div>
                             <div class="col-md-6">
                                 <label for="birth_date">Date of Birth</label>
                             </div>
                             <div class="col-md-6">
-                                <span>33 February 1999</span>
+                                <span>9 Juni 2000</span>
                             </div>
                             <div class="w-100"></div>
                             <div class="col-md-6">
                                 <label for="gender">Gender</label>
                             </div>
                             <div class="col-md-6">
-                                <span>Men</span>
+                                <span>Male</span>
                             </div>
                             <div class="w-100"></div>
                             <div class="col-md-6">
                                 <label for="phone">Phone number</label>
                             </div>
                             <div class="col-md-6">
-                                <span>081111111111</span>
+                                <span>082112345678</span>
                             </div>
                             <div class="w-100"></div>
                             <div class="col-md-6">
                                 <label for="email">E-mail</label>
                             </div>
                             <div class="col-md-6">
-                                <span>hehe@cs.unej.ac.id</span>
+                                <span>182410103030@cs.unej.ac.id</span>
                             </div>
                         </div>
                     </div>
@@ -180,9 +201,9 @@
                                 <form action="">
                                     <select id="myselect" class="form-control"
                                         style="font-size: 13px;height: 40px!important;">
-                                        <option selected disabled>Changes Roles</option>
-                                        <option value=" 1">Admin</option>
-                                        <option value="2">Consumer</option>
+                                        <option disabled>Changes Roles</option>
+                                        <option value="1">Admin</option>
+                                        <option value="2" selected>Consumer</option>
                                     </select>
                                 </form>
                             </div>
@@ -191,7 +212,7 @@
                             <div class="cart-detail cart-total p-3 p-md-4">
                                 <div>
                                     <span>
-                                        <img src="images/person_2.jpg" alt="" class="user_profile_detail">
+                                        <img src="../../images/person_2.jpg" alt="" class="user_profile_detail">
                                     </span>
                                 </div>
                                 <hr>
@@ -200,8 +221,7 @@
                         <div class="col-md-12">
                             <div class="cart-detail p-3 p-md-4">
                                 <p>
-                                    <a href="super_admin_user_managements_details_edit.html"
-                                        class="btn btn-primary py-3 px-4">
+                                    <a href="user_managements_details_edit.html" class="btn btn-primary py-3 px-4">
                                         Edit this person's profile
                                     </a>
                                 </p>
@@ -307,23 +327,20 @@
                 stroke="#F96D00" /></svg></div>
 
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/bootstrap-datepicker.js"></script>
-    <script src="js/scrollax.min.js"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    <script src="js/google-map.js"></script>
-    <script src="js/main.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="../../js/popper.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/jquery.easing.1.3.js"></script>
+    <script src="../../js/jquery.waypoints.min.js"></script>
+    <script src="../../js/jquery.stellar.min.js"></script>
+    <script src="../../js/owl.carousel.min.js"></script>
+    <script src="../../js/jquery.magnific-popup.min.js"></script>
+    <script src="../../js/aos.js"></script>
+    <script src="../../js/jquery.animateNumber.min.js"></script>
+    <script src="../../js/bootstrap-datepicker.js"></script>
+    <script src="../../js/scrollax.min.js"></script>
+    <script src="../../js/main.js"></script>
 
     <script>
         $(document).ready(function () { //Make script DOM ready
