@@ -31,104 +31,6 @@
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
-
-	<style>
-		.thisClose {
-			float: right;
-			cursor: pointer;
-		}
-
-		input[type=text],
-		input[type=password],
-		input[type=email] {
-			width: 100%;
-			padding: 12px 20px;
-			margin: 8px 0;
-			display: inline-block;
-			border: 1px solid #ccc;
-			box-sizing: border-box;
-		}
-
-		.btn-lr {
-			background-color: #82ae46;
-			color: white;
-			padding: 14px 20px;
-			margin: 8px 0;
-			border: none;
-			cursor: pointer;
-			width: 100%;
-		}
-
-		.btn-lr:hover {
-			opacity: 0.8;
-		}
-
-		.thisContainer {
-			padding: 16px;
-		}
-
-		span.psw {
-			padding-top: 16px;
-		}
-
-		.popUpLog {
-			display: none;
-			position: fixed;
-			z-index: 1;
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 100%;
-			background-color: rgba(0, 0, 0, 0.5);
-			padding-top: 100px;
-		}
-
-		.popUpReg {
-			display: none;
-			position: fixed;
-			z-index: 1;
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 100%;
-			background-color: rgba(0, 0, 0, 0.5);
-		}
-
-		.popUp-content {
-			background-color: #fefefe;
-			padding: 2%;
-			margin: 5% auto 15% auto;
-			border: 1px solid #888;
-			width: 80%;
-		}
-
-
-		/* CSS3 */
-		.animate {
-			-webkit-animation: animatezoom 0.6s;
-			animation: animatezoom 0.6s
-		}
-
-		@-webkit-keyframes animatezoom {
-			from {
-				-webkit-transform: scale(0)
-			}
-
-			to {
-				-webkit-transform: scale(1)
-			}
-		}
-
-		@keyframes animatezoom {
-			from {
-				transform: scale(0)
-			}
-
-			to {
-				transform: scale(1)
-			}
-		}
-	</style>
 	<link rel="stylesheet" href="css/custom_style.css">
 </head>
 
@@ -156,10 +58,6 @@
 							<a class="dropdown-item" href="signUp.html">Sign Up</a>
 						</div>
 					</li>
-					<!-- Ditamplikan saat user sudah login -->
-					<li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span
-								class="icon-shopping_cart"></span>[0]</a></li>
-					<!-- END Ditamplikan saat user sudah login -->
 				</ul>
 			</div>
 		</div>
@@ -205,7 +103,7 @@
 	<!-- END JUMBOTRON -->
 
 	<!-- PRIVILEGE -->
-	<section class="ftco-section">
+	<!-- <section class="ftco-section">
 		<div class="container">
 			<div class="row no-gutters ftco-services">
 				<div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
@@ -214,8 +112,11 @@
 							<span><img src="icons/shipping.png" alt="FreeShip"></span>
 						</div>
 						<div class="media-body">
-							<h3 class="heading">Free Shipping</h3>
-							<span>Free Shipping</span>
+							<h3 class="heading">Pengiriman</h3>
+							<div class="d-flex flex-column">
+								<span>Siap Melayani Pengiriman Luar Kota</span>
+								<span style="font-size: 8px;">*S&K Berlaku</span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -225,8 +126,8 @@
 							<span><img src="icons/hydroponic.png" alt="FreeShip"></span>
 						</div>
 						<div class="media-body">
-							<h3 class="heading">Free Shipping</h3>
-							<span>Free Shipping</span>
+							<h3 class="heading">Lorem Ipsum</h3>
+							<span>Lorem Ipsum</span>
 						</div>
 					</div>
 				</div>
@@ -254,64 +155,8 @@
 				</div>
 			</div>
 		</div>
-	</section>
-	<!-- END PRIVILEGE -->
-
-	<!-- GK TAU MAU BUAT APA, JADI DISABLE DULU AJA -->
-	<!-- <section class="ftco-section ftco-category ftco-no-pt">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8">
-					<div class="row">
-						<div class="col-md-6">
-							<div class="category-wrap ftco-animate img mb-4 d-flex align-items-end"
-								style="background-color: grey;">
-								<div class="text px-3 py-1">
-									<h2 class="mb-0"><a href="#">Fruits</a></h2>
-								</div>
-							</div>
-							<div class="category-wrap ftco-animate img mb-4 d-flex align-items-end"
-								style="background-image: url(images/category-1.jpg);">
-								<div class="text px-3 py-1">
-									<h2 class="mb-0"><a href="#">Fruits</a></h2>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="category-wrap ftco-animate img mb-4 d-flex align-items-end"
-								style="background-image: url(images/category-1.jpg);">
-								<div class="text px-3 py-1">
-									<h2 class="mb-0"><a href="#">Fruits</a></h2>
-								</div>
-							</div>
-							<div class="category-wrap ftco-animate img d-flex align-items-end"
-								style="background-image: url(images/category-2.jpg);">
-								<div class="text px-3 py-1">
-									<h2 class="mb-0"><a href="#">Vegetables</a></h2>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-4">
-					<div class="category-wrap ftco-animate img mb-4 d-flex align-items-end"
-						style="background-image: url(images/category-3.jpg);">
-						<div class="text px-3 py-1">
-							<h2 class="mb-0"><a href="#">Juices</a></h2>
-						</div>
-					</div>
-					<div class="category-wrap ftco-animate img d-flex align-items-end"
-						style="background-image: url(images/category-4.jpg);">
-						<div class="text px-3 py-1">
-							<h2 class="mb-0"><a href="#">Dried</a></h2>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 	</section> -->
-	<!-- GK TAU MAU BUAT APA, JADI DISABLE DULU AJA -->
+	<!-- END PRIVILEGE -->
 
 	<!-- Produt Show -->
 	<section class="ftco-section">
@@ -319,7 +164,6 @@
 			<div class="row justify-content-center mb-3 pb-3">
 				<div class="col-md-12 heading-section text-center ftco-animate">
 					<h2 class="mb-4">Our Products</h2>
-					<p>Lorem Ipsum</p>
 				</div>
 			</div>
 		</div>
@@ -329,15 +173,13 @@
 					<div class="product">
 						<a href="#" class="img-prod"><img class="img-fluid" src="images/product-1.jpg"
 								alt="Colorlib Template">
-							<span class="status">30%</span>
 							<div class="overlay"></div>
 						</a>
 						<div class="text py-3 pb-4 px-3 text-center">
 							<h3><a href="#">Bell Pepper</a></h3>
 							<div class="d-flex">
 								<div class="pricing">
-									<p class="price"><span class="mr-2 price-dc">$120.00</span><span
-											class="price-sale">$80.00</span></p>
+									<p class="price"><span>Rp6000,00</span></p>
 								</div>
 							</div>
 						</div>
@@ -353,7 +195,7 @@
 							<h3><a href="#">Strawberry</a></h3>
 							<div class="d-flex">
 								<div class="pricing">
-									<p class="price"><span>$120.00</span></p>
+									<p class="price"><span>Rp6000,00</span></p>
 								</div>
 							</div>
 							<div class="bottom-area d-flex px-3">
@@ -383,7 +225,7 @@
 							<h3><a href="#">Green Beans</a></h3>
 							<div class="d-flex">
 								<div class="pricing">
-									<p class="price"><span>$120.00</span></p>
+									<p class="price"><span>Rp6000,00</span></p>
 								</div>
 							</div>
 							<div class="bottom-area d-flex px-3">
@@ -413,7 +255,7 @@
 							<h3><a href="#">Purple Cabbage</a></h3>
 							<div class="d-flex">
 								<div class="pricing">
-									<p class="price"><span>$120.00</span></p>
+									<p class="price"><span>Rp6000,00</span></p>
 								</div>
 							</div>
 							<div class="bottom-area d-flex px-3">
@@ -439,15 +281,13 @@
 					<div class="product">
 						<a href="#" class="img-prod"><img class="img-fluid" src="images/product-5.jpg"
 								alt="Colorlib Template">
-							<span class="status">30%</span>
 							<div class="overlay"></div>
 						</a>
 						<div class="text py-3 pb-4 px-3 text-center">
 							<h3><a href="#">Tomatoe</a></h3>
 							<div class="d-flex">
 								<div class="pricing">
-									<p class="price"><span class="mr-2 price-dc">$120.00</span><span
-											class="price-sale">$80.00</span></p>
+									<p class="price"><span>Rp6000,00</span></p>
 								</div>
 							</div>
 							<div class="bottom-area d-flex px-3">
@@ -477,7 +317,7 @@
 							<h3><a href="#">Brocolli</a></h3>
 							<div class="d-flex">
 								<div class="pricing">
-									<p class="price"><span>$120.00</span></p>
+									<p class="price"><span>Rp6000,00</span></p>
 								</div>
 							</div>
 							<div class="bottom-area d-flex px-3">
@@ -507,7 +347,7 @@
 							<h3><a href="#">Carrots</a></h3>
 							<div class="d-flex">
 								<div class="pricing">
-									<p class="price"><span>$120.00</span></p>
+									<p class="price"><span>Rp6000,00</span></p>
 								</div>
 							</div>
 							<div class="bottom-area d-flex px-3">
@@ -537,7 +377,7 @@
 							<h3><a href="#">Fruit Juice</a></h3>
 							<div class="d-flex">
 								<div class="pricing">
-									<p class="price"><span>$120.00</span></p>
+									<p class="price"><span>Rp6000,00</span></p>
 								</div>
 							</div>
 							<div class="bottom-area d-flex px-3">
