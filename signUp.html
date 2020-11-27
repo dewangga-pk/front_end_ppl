@@ -131,9 +131,30 @@
                                 </span>
                             </div>
                             <select class="custom-select" id="city" name="city">
+                                <option class="disabled" value="">Choose your Province</option>
+                                <option value="1">Jawa Timur</option>
+                                <option value="2">Bali</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group icon_input">
+                        <div class="input-group input-group-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-lg">
+                                    <i class="fa fa-city" style="color: #81CB9A;"></i>
+                                </span>
+                            </div>
+                            <select class="custom-select" id="city" name="city">
                                 <option class="disabled" value="">Choose your City</option>
-                                <option value="Jember">1</option>
-                                <option value="Banyuwangi">2</option>
+                                <option value="1">Jember</option>
+                                <option value="2">Lumajang</option>
+                                <option value="3">Situbondo</option>
+                                <option value="4">Banyuwangi</option>
+                                <option value="5">Bondowoso</option>
+                                <option value="6">Probolinggo</option>
+                                <option value="7">Surabaya</option>
+                                <option value="8">Malang</option>
+                                <option value="9">Denpasar</option>
                             </select>
                         </div>
                     </div>
@@ -218,10 +239,7 @@
                     }
                 }
                 if (!validate) {
-                    alert('error');
                     event.preventDefault();
-                } else {
-                    alert("Will be sumbited");
                 }
             });
         }
