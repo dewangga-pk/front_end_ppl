@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
-    <title>Mahameru Hydrofarm</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Add New Products</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -35,7 +37,7 @@
     <!-- END ICON FONTAWESOME -->
 </head>
 
-<body class="goto-here">
+<body class="goto-here" style="background-color: white!important;">
     <!-- MODAL LOGOUT CONFIRM -->
     <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -90,44 +92,87 @@
     </nav>
     <!-- END nav -->
 
+
     <!-- JUMBOTRON -->
-    <section id="home-section" class="hero">
-        <div class="home-slider owl-carousel">
-            <div class="slider-item"
-                style="background:linear-gradient(0deg, rgba(57, 53, 56, 0.3), rgba(0, 0, 0, 0.8)), url('../../images/bg_1.png');background-size: cover;">
-                <div class="overlay"></div>
-                <div class="container">
-                    <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
-
-                        <div class="col-md-12 ftco-animate text-center">
-                            <h1 class="mb-2">We Provide All Hydroponic Needs</h1>
-                            <h2 class="subheading mb-4">We provide all hydroponic needs</h2>
-                            <!-- <p><a href="#" class="btn btn-primary">View Details</a></p> -->
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="slider-item"
-                style="background:linear-gradient(0deg, rgba(57, 53, 56, 0.3), rgba(0, 0, 0, 0.8)), url(../../images/bg_1.png);background-size: cover;">
-                <div class="overlay"></div>
-                <div class="container">
-                    <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
-
-                        <div class="col-sm-12 ftco-animate text-center">
-                            <h1 class="mb-2">Organic Foods</h1>
-                            <h2 class="subheading mb-4">We deliver organic vegetables</h2>
-                            <!-- <p><a href="#" class="btn btn-primary">View Details</a></p> -->
-                        </div>
-
-                    </div>
+    <div class="hero-wrap hero-bread" style="background-image: url('../../images/bg_1.jpg');">
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-center">
+                <div class="col-md-9 ftco-animate text-center">
+                    <h1 class="mb-0 bread">Add New Product</h1>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <!-- END JUMBOTRON -->
 
-    <!-- footer -->
+
+    <section class="ftco-section">
+        <div class="container">
+            <form action="#" class="billing-form" id="product_form">
+                <div class="row justify-content-center">
+                    <!-- LEFT SIDE -->
+                    <div class="col-xl-7 ftco-animate">
+                        <h3 class="mb-4 billing-heading">New Product</h3>
+                        <div class="row align-items-end">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="product_name">Product Name</label>
+                                    <input type="text" class="form-control" placeholder="" id="product_name"
+                                        name="product_name">
+                                </div>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="price">Price</label>
+                                    <input type="text" class="form-control" placeholder="" id="product_price"
+                                        name="product_price">
+                                </div>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="price">Stock</label>
+                                    <input type="text" class="form-control" placeholder="" id="product_stock">
+                                </div>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="details">Details Product</label>
+                                    <textarea name="product_details" id="product_details" cols="30" rows="10"
+                                        class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END LEFT SIDE-->
+                    <div class="col-xl-5">
+                        <div class="row mt-5 pt-3">
+                            <div class="col-md-12">
+                                <div class="cart-detail p-3 p-md-4">
+                                    <h3 class="billing-heading mb-4">Product Picture</h3>
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <input type="file" id="product_thumbnail" name="product_thumbnail">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- .col-md-8 -->
+                </div>
+                <div class=" w-100"></div>
+                <div class="col-md-12">
+                    <div class="cart-detail p-3 p-md-4 d-flex justify-content-around">
+                        <button href="" class="btn btn-outline-danger py-3 px-4">Cancel</button>
+                        <button href="#" class="btn btn-outline-primary py-3 px-4" type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section> <!-- .section -->
+
     <footer class="ftco-footer ftco-section">
         <div class="container">
             <div class="row">
@@ -193,7 +238,7 @@
             </div>
         </div>
     </footer>
-    <!-- end footer  -->
+
 
 
     <!-- loader -->
@@ -217,6 +262,19 @@
     <script src="../../js/bootstrap-datepicker.js"></script>
     <script src="../../js/scrollax.min.js"></script>
     <script src="../../js/main.js"></script>
+    <script>
+        $('#product_form').submit(function (event) {
+            var p_name = $('#product_name').val();
+            var p_price = $('#product_price').val();
+            var p_detais = $('#product_details').val();
+            var p_thumb = $('#product_thumbnail').val();
+            if (!p_name || !p_price || !p_detais || p_thumb) {
+                alert('Please fulfill information about your product')
+                event.preventDefault();
+            }
+        });
+    </script>
+
 </body>
 
 </html>
