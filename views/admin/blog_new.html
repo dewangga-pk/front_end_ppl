@@ -13,32 +13,50 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="../../css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/animate.css">
 
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="../../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../../css/magnific-popup.css">
 
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="../../css/aos.css">
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="../../css/ionicons.min.css">
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="../../css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="../../css/jquery.timepicker.css">
 
 
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/custom_style.css">
+    <link rel="stylesheet" href="../../css/flaticon.css">
+    <link rel="stylesheet" href="../../css/icomoon.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/custom_style.css">
     <!-- ICON FONTAWESOME -->
     <script src="https://kit.fontawesome.com/3aa0ba3511.js" crossorigin="anonymous"></script>
     <!-- END ICON FONTAWESOME -->
 </head>
 
 <body class="goto-here">
-    <!-- NAV ADMIN TANPA CART -->
+    <!-- MODAL LOGOUT CONFIRM -->
+    <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Caution</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">Are you sure to log out?</div>
+                <div class="modal-footer d-flex justify-content-around">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-primary">Yes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MODAL LOGOUT CONFIRM -->
     <!-- START NAV -->
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
@@ -50,20 +68,22 @@
 
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="admin_index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="admin_blog.html" class="nav-link">Blog</a></li>
-                    <li class="nav-item"><a href="admin_shop.html" class="nav-link">Shop</a></li>
-                    <li class="nav-item"><a href="admin_contact.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Shop</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
                     <li class="nav-item dropdown">
                         <div class="nav-link dropdown-toggle" id="cbAccount" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
-                            <span><img src="images/person_2.jpg" alt="Foto Profil" class="foto_profil_user"></span>
+                            <span><img src="../../images/person_2.jpg" alt="Foto Profil"
+                                    class="foto_profil_user"></span>
                             <span>Nama Admin</span>
                         </div>
                         <div class="dropdown-menu" aria-labelledby="cbAccount">
-                            <a class="dropdown-item" href="admin_profile.html">My Profile</a>
-                            <a class="dropdown-item" href="admin_transaction.html">Transaction Data</a>
-                            <a class="dropdown-item" href="#">Log out</a>
+                            <a class="dropdown-item" href="profile.html">My Profile</a>
+                            <a class="dropdown-item" href="transaction.html">Transaction Data</a>
+                            <a class="dropdown-item" href="../../index.html" data-toggle="modal"
+                                data-target="#logoutModal">Log out</a>
                         </div>
                     </li>
                 </ul>
@@ -73,7 +93,7 @@
     <!-- END nav -->
 
     <!-- JUMBOTRON -->
-    <div class="hero-wrap hero-bread" style="background-image: url('images/bg_1.jpg');">
+    <div class="hero-wrap hero-bread" style="background-image: url('../../images/bg_1.jpg');">
         <div class="container">
             <div class="row no-gutters slider-text align-items-center justify-content-center">
                 <div class="col-md-9 ftco-animate text-center">
@@ -89,35 +109,29 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-7 ftco-animate">
-                    <form action="#" class="billing-form">
+                    <form action="#" class="billing-form" id="new_blog_form">
                         <h3 class="mb-4 billing-heading">Blog</h3>
                         <div class="row align-items-end">
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label for="title">Title</label>
-                                    <input type="text" class="form-control" placeholder="">
-                                </div>
-                            </div>
-                            <div class="w-100"></div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="title">Tag</label>
-                                    <input type="text" class="form-control" placeholder="">
+                                    <input type="text" class="form-control" placeholder="" id="blog_title"
+                                        name="blog_title">
                                 </div>
                             </div>
                             <div class="w-100"></div>
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label for="content">Content</label>
-                                    <textarea class="form-control" name="" id="" cols="30" rows="100"></textarea>
+                                    <textarea class="form-control" name="blog_content" id="blog_content" cols="30"
+                                        rows="30"></textarea>
                                 </div>
                             </div>
                             <div class="w-100"></div>
                             <div class="col-md-12">
                                 <div class="cart-detail p-3 p-md-4 d-flex justify-content-around">
-                                    <button href="" class="btn btn-outline-danger py-3 px-4">Cancel</button>
-                                    <button href="#" class="btn btn-outline-primary py-3 px-4"
-                                        type="submit">Save</button>
+                                    <a href="blog.html" class="btn btn-outline-danger py-3 px-4">Cancel</a>
+                                    <button class="btn btn-outline-primary py-3 px-4" type="submit">Submit</button>
                                 </div>
                             </div>
                         </div>
@@ -203,24 +217,31 @@
                 stroke="#F96D00" /></svg></div>
 
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/bootstrap-datepicker.js"></script>
-    <script src="js/scrollax.min.js"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    <script src="js/google-map.js"></script>
-    <script src="js/main.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="../../js/popper.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/jquery.easing.1.3.js"></script>
+    <script src="../../js/jquery.waypoints.min.js"></script>
+    <script src="../../js/jquery.stellar.min.js"></script>
+    <script src="../../js/owl.carousel.min.js"></script>
+    <script src="../../js/jquery.magnific-popup.min.js"></script>
+    <script src="../../js/aos.js"></script>
+    <script src="../../js/jquery.animateNumber.min.js"></script>
+    <script src="../../js/bootstrap-datepicker.js"></script>
+    <script src="../../js/scrollax.min.js"></script>
+    <script src="../../js/main.js"></script>
 
+    <script>
+        $('#new_blog_form').submit(function (event) {
+            var title = $('#blog_title').val();
+            var content = $('#blog_content').val();
+            if (!title || !content) {
+                alert("Please fulfill the data")
+                event.preventDefault();
+            }
+        });
+    </script>
 </body>
 
 </html>
