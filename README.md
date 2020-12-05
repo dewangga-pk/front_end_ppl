@@ -5,7 +5,7 @@
   + [ ] Auth :
     + [x] Login ->login.html
     + [x] Register ->signUp.html
-    + User : -> User_index_after_login.html
+    + User : views/users/index.html
         * [x] Profile Details ->user_profile.html
         * [x] Profile Update/Edit ->edit_profile.html
     + Super Admin :

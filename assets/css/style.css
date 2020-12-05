@@ -4,7 +4,6 @@ body{
     background-repeat: no-repeat;
     background-position: right top;
     background-size: 32em 48em;
-    
 }
 nav #navbarNavAltMarkup .navbar-nav a{
     font-family: sans-serif;
@@ -35,7 +34,7 @@ button.btn.btn-primary.col-md-3.offset-md-9{
     font-weight: 500;
 }
 
-.icon_input span#inputGroup-sizing-lg.input-group-text, .icon_input input.form-control{
+.icon_input span#inputGroup-sizing-lg.input-group-text, .icon_input input.form-control,.icon_input select.custom-select{
     background-color: white;
     border: 0px;
     box-shadow: 3px 5px 7px rgba(45, 168, 87, 0.2);
