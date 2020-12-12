@@ -30,6 +30,11 @@
     <link rel="stylesheet" href="../../css/icomoon.css">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/custom_style.css">
+    <link rel="stylesheet" href="../../css/chat.css">
+    <!-- ICON FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/3aa0ba3511.js" crossorigin="anonymous"></script>
+    <!-- END ICON FONTAWESOME -->
+
 </head>
 
 <body class="goto-here">
@@ -397,103 +402,6 @@
     </section>
     <!-- END JUMBOTRON DICSOUNT -->
 
-    <!-- Testimony -->
-    <!-- <section class="ftco-section testimony-section">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-3">
-				<div class="col-md-7 heading-section ftco-animate text-center">
-					<span class="subheading">Testimony</span>
-					<h2 class="mb-4">Our satisfied customer says</h2>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium debitis labore ipsam
-						repudiandae alias, ea ducimus! Ipsam autem nihil, asperiores ullam iusto obcaecati, quos aut
-						impedit, voluptatem necessitatibus veritatis. Voluptate?</p>
-				</div>
-			</div>
-			<div class="row ftco-animate">
-				<div class="col-md-12">
-					<div class="carousel-testimony owl-carousel">
-						<div class="item">
-							<div class="testimony-wrap p-4 pb-5">
-								<div class="user-img mb-5" style="background-image: url(images/person_1.jpg)">
-									<span class="quote d-flex align-items-center justify-content-center">
-										<i class="icon-quote-left"></i>
-									</span>
-								</div>
-								<div class="text text-center">
-									<p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the
-										countries Vokalia and Consonantia, there live the blind texts.</p>
-									<p class="name">Garreth Smith</p>
-									<span class="position">Marketing Manager</span>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimony-wrap p-4 pb-5">
-								<div class="user-img mb-5" style="background-image: url(images/person_2.jpg)">
-									<span class="quote d-flex align-items-center justify-content-center">
-										<i class="icon-quote-left"></i>
-									</span>
-								</div>
-								<div class="text text-center">
-									<p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the
-										countries Vokalia and Consonantia, there live the blind texts.</p>
-									<p class="name">Garreth Smith</p>
-									<span class="position">Interface Designer</span>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimony-wrap p-4 pb-5">
-								<div class="user-img mb-5" style="background-image: url(images/person_3.jpg)">
-									<span class="quote d-flex align-items-center justify-content-center">
-										<i class="icon-quote-left"></i>
-									</span>
-								</div>
-								<div class="text text-center">
-									<p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the
-										countries Vokalia and Consonantia, there live the blind texts.</p>
-									<p class="name">Garreth Smith</p>
-									<span class="position">UI Designer</span>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimony-wrap p-4 pb-5">
-								<div class="user-img mb-5" style="background-image: url(images/person_1.jpg)">
-									<span class="quote d-flex align-items-center justify-content-center">
-										<i class="icon-quote-left"></i>
-									</span>
-								</div>
-								<div class="text text-center">
-									<p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the
-										countries Vokalia and Consonantia, there live the blind texts.</p>
-									<p class="name">Garreth Smith</p>
-									<span class="position">Web Developer</span>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimony-wrap p-4 pb-5">
-								<div class="user-img mb-5" style="background-image: url(images/person_1.jpg)">
-									<span class="quote d-flex align-items-center justify-content-center">
-										<i class="icon-quote-left"></i>
-									</span>
-								</div>
-								<div class="text text-center">
-									<p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the
-										countries Vokalia and Consonantia, there live the blind texts.</p>
-									<p class="name">Garreth Smith</p>
-									<span class="position">System Analyst</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
-    <!-- END Testimony -->
-
     <hr>
     <!-- 
 		<section class="ftco-section ftco-partner">
@@ -517,6 +425,131 @@
     </div>
     </div>
     </section>
+
+
+
+    <!-- MESSAGE CONSULTATION -->
+    <button class="btn btn-success" id="fixed-consul-btn" onclick="openForm()">
+        <i class="fas fa-comment"></i>
+    </button>
+    <!-- <button class="open-button" onclick="openForm()">Chat</button> -->
+
+    <div class="chat-popup" id="myForm" style="background-color: white!important;">
+        <div class="container" id="msg-header">
+            <div class="row d-flex justify-content-between pt-2">
+                <div class="col">Konsultasi</div>
+                <a href="#" id="msg-icons-close"><i class="fas fa-times-circle mr-1" onclick="closeForm()"></i></a>
+            </div>
+        </div>
+        <div class="msg-inbox">
+            <div class="chats">
+                <div class="msg-page">
+                    <div class="received-chats">
+                        <div class="received-chats-img">
+                            <img class="chats-img" src="../../images/person_1.jpg" alt="">
+                        </div>
+                        <div class="received-msg">
+                            <div class="received-msg-inbox">
+                                <p>Besok uas, hmm ....</p>
+                                <span class="msg-time-received">11:01 PM | December 12</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="outgoing-chats">
+                        <div class="outgoing-chats-img">
+                            <img class="outgoing-chats-img" src="../../images/person_2.jpg" alt="">
+                        </div>
+                        <div class="outgoing-msg">
+                            <div class="outgoing-msg-inbox">
+                                <p>hmm uas.....</p>
+                                <span class="msg-time-outgoing">11:01 PM | December 12</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="received-chats">
+                        <div class="received-chats-img">
+                            <img class="chats-img" src="../../images/person_1.jpg" alt="">
+                        </div>
+                        <div class="received-msg">
+                            <div class="received-msg-inbox">
+                                <p>Besok uas, hmm ....</p>
+                                <span class="msg-time-received">11:01 PM | December 12</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outgoing-chats">
+                        <div class="outgoing-chats-img">
+                            <img class="outgoing-chats-img" src="../../images/person_2.jpg" alt="">
+                        </div>
+                        <div class="outgoing-msg">
+                            <div class="outgoing-msg-inbox">
+                                <p>hmm uas.....</p>
+                                <span class="msg-time-outgoing">11:01 PM | December 12</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="received-chats">
+                        <div class="received-chats-img">
+                            <img class="chats-img" src="../../images/person_1.jpg" alt="">
+                        </div>
+                        <div class="received-msg">
+                            <div class="received-msg-inbox">
+                                <p>Besok uas, hmm ....</p>
+                                <span class="msg-time-received">11:01 PM | December 12</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outgoing-chats">
+                        <div class="outgoing-chats-img">
+                            <img class="outgoing-chats-img" src="../../images/person_2.jpg" alt="">
+                        </div>
+                        <div class="outgoing-msg">
+                            <div class="outgoing-msg-inbox">
+                                <p>hmm uas.....</p>
+                                <span class="msg-time-outgoing">11:01 PM | December 12</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="received-chats">
+                        <div class="received-chats-img">
+                            <img class="chats-img" src="../../images/person_1.jpg" alt="">
+                        </div>
+                        <div class="received-msg">
+                            <div class="received-msg-inbox">
+                                <p>Besok uas, hmm ....</p>
+                                <span class="msg-time-received">11:01 PM | December 12</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outgoing-chats">
+                        <div class="outgoing-chats-img">
+                            <img class="outgoing-chats-img" src="../../images/person_2.jpg" alt="">
+                        </div>
+                        <div class="outgoing-msg">
+                            <div class="outgoing-msg-inbox">
+                                <p>hmm uas.....</p>
+                                <span class="msg-time-outgoing">11:01 PM | December 12</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form action="/action_page.php" class="form-container mt-2">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="write mesage...">
+                <div class="input-group-append">
+                    <span class="input-group-text">
+                        <a href=""><i class="fas fa-paper-plane"></i></a>
+                    </span>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- END MESSAGE CONSULTATION -->
 
     <!-- footer -->
     <footer class="ftco-footer ftco-section">
@@ -587,11 +620,13 @@
     <!-- end footer  -->
 
 
+
     <!-- loader -->
     <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
             <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
             <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-                stroke="#F96D00" /></svg></div>
+                stroke="#F96D00" />
+        </svg></div>
 
 
     <script src="../../js/jquery.min.js"></script>
@@ -608,7 +643,17 @@
     <script src="../../js/bootstrap-datepicker.js"></script>
     <script src="../../js/scrollax.min.js"></script>
     <script src="../../js/main.js"></script>
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+            $('#fixed-consul-btn').addClass('d-none');
+        }
 
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+            $('#fixed-consul-btn').removeClass('d-none');
+        }
+    </script>
 </body>
 
 </html>
